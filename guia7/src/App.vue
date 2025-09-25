@@ -1,30 +1,36 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <nav>
+    <router-link to="/">Animales</router-link> |
+    <router-link to="/calculadora">Calculadora</router-link>
+</nav>
   </nav>
   <router-view/>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+font-family: Avenir, Helvetica, Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-align: center;
+color: #435334;
 }
-
+body {
+margin: 0;
+}
 nav {
-  padding: 30px;
+padding: 30px;
+background-color: black;
 }
-
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+font-weight: bold;
+color: white;
+text-decoration: none;
+borderpadding: 20px;
 }
-
 nav a.router-link-exact-active {
-  color: #42b983;
+color: yellowgreen;
+border-bottom: 1px solid yellowgreen;
 }
 </style>
